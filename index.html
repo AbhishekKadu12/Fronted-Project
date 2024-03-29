@@ -3,42 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="Description" content="Enter your description here" />
-    <title>Ecommerce Jewellery Website</title>
-    <!-- bootstrap CDN -->
+    <title>FOODIE LANDING PAGE</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="Hotel.png" />
+
+    <!-- Bootstrap 5 CDN Links -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <!-- OWN CSS -->
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- Custom File's Link -->
+    <link rel="stylesheet" href="Style.css" />
     <link rel="stylesheet" href="css/responsive-style.css" />
   </head>
 
-  <body data-bs-spy="scroll" data-bs-target=".navbar">
-    <!-- header design -->
-    <header>
-      <div class="top-header">
-        <div
-          class="container d-flex justify-content-between align-items-center py-3"
-        >
-          <span>Free shipping for orders over </span>
-          <span>Call: 800-6688-999</span>
-        </div>
-      </div>
-
-      <nav class="navbar navbar-expand-lg navigation-wrap">
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+      <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img
               decoding="async"
-              src="Jewellers-icon.jpg"
-              style="height: 50px; width: 30px"
+              src="Foodies.webp"
+              class="img-fluid"
+              alt="logo"
             />
           </a>
           <button
@@ -50,974 +45,426 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <!-- <span class="navbar-toggler-icon"></span> -->
             <i class="fas fa-stream navbar-toggler-icon"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav menu-navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#home"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#new-arrivals">New Arrivals</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#products">Products</a>
+                <a class="nav-link" href="#menu">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#deal">Deal of the day</a>
+                <a class="nav-link" href="#offers">Offers</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#blog">Blog</a>
+                <a class="nav-link" href="#review">Review</a>
+              </li>
+              <li class="nav-item mt-3 mt-lg-0">
+                <a class="main-btn" href="#contact">Order Online</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+    <!-- Navbar section exit -->
 
-    <!-- section-1 top-banner -->
-    <section id="home">
-      <div
-        id="carouselExampleControls"
-        class="carousel"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              decoding="async"
-              src="banner-image.gif"
-              style="height: 500px; width: 300px; background-size: cover"
-              class="d-block w-100"
-              alt="img-1"
-            />
-            <div class="carousel-caption text-center">
-              <h1>up to 45% off</h1>
-              <p>
-                This unique jewelry is handcrafted on the beautiful island of
-                Nantucket using fine silver and semi precious stones.
-              </p>
-              <a href="#" class="main-btn">Shop now</a>
-            </div>
+    <!-- Banner section -->
+    <section id="home" class="banner_wrapper">
+      <div class="container">
+        <div class="row align-items-center mt-5">
+          <div class="col-lg-5 text-center text-lg-start order-lg-1 order-2">
+            <h1>
+              <span>Dining</span><br />
+              On The Lake
+            </h1>
+            <p>
+              The full form of a HOTEL is a Hospitality Organisation for Tourism
+              Entertainment and lodging. It refers to a place where travelers
+              can stay and rest for a particular duration of time. This word
+              came from the French word hôtel which refers to a large townhouse
+              or mansion used to accommodate guests.
+            </p>
+
+            <a class="main-btn mt-4" href="#">View Menu</a>
           </div>
-          <div class="carousel-item">
-            <img
-              decoding="async"
-              src="banner-image-3.gif"
-              style="height: 500px; width: 300px; background-size: cover"
-              class="d-block w-100"
-              alt="img-2"
-            />
-            <div class="carousel-caption text-center">
-              <h1>up to 45% off</h1>
-              <p>
-                This unique jewelry is handcrafted on the beautiful island of
-                Nantucket using fine silver and semi precious stones.
-              </p>
-              <a href="#" class="main-btn">Shop now</a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              decoding="async"
-              src="banner-image-4.gif"
-              style="height: 500px; width: 300px"
-              class="d-block w-100"
-              alt="img-3"
-            />
-            <div class="carousel-caption text-center">
-              <h1>up to 45% off</h1>
-              <p>
-                This unique jewelry is handcrafted on the beautiful island of
-                Nantucket using fine silver and semi precious stones.
-              </p>
-              <a href="#" class="main-btn">Shop now</a>
-            </div>
+          <div class="col-lg-7 text-center order-lg-2 order-1">
+            <img decoding="async" src="Hotel Shapes.jpeg" class="img-fluid" />
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-
-    <!-- section-2 new-arrivals-->
-    <section id="new-arrivals">
-      <div class="new-arrivals wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 mb-2 text-content text-center">
-              <h2>NEW ARRIVALS</h2>
-              <p>
-                This unique jewelry is handcrafted on the beautiful island of
-                Nantucket using fine silver and semi precious stones. View
-                glasse fashion collection 2018 by Fanbong
-              </p>
+        <div class="row top-menu mt-5">
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="card">
+              <img decoding="async" src="Foodie-menu-Two.jpg" alt="menu" />
             </div>
           </div>
-          <div class="row align-items-center">
-            <div class="col-sm-4 col-12 p-sm-0 card-banner">
-              <div class="card-banner position-relative text-center">
-                <a href="#" class="card-thumb">
-                  <img
-                    decoding="async"
-                    src="Necklase.jpg"
-                    alt="img-1"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="banner-info text-center">
-                  <h2>Necklace</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
-                    sed do eiusmod
-                  </p>
-                  <a href="#" class="main-btn">Shop now</a>
-                </div>
-              </div>
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="card">
+              <img decoding="async" src="Foodie-Menu-Three.jpg" alt="menu" />
             </div>
-            <div class="col-sm-4 col-12 p-sm-0 card-banner">
-              <div class="card-banner position-relative text-center">
-                <a href="#" class="card-thumb">
-                  <img
-                    decoding="async"
-                    src="Necklase-2.jpg"
-                    alt="img-1"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="banner-info text-center">
-                  <h2>Necklace</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
-                    sed do eiusmod
-                  </p>
-                  <a href="#" class="main-btn">Shop now</a>
-                </div>
-              </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="card">
+              <img decoding="async" src="Foodie-Menu-Six.jpg" alt="menu" />
             </div>
-            <div class="col-sm-4 col-12 p-sm-0 card-banner">
-              <div class="card-banner position-relative text-center">
-                <a href="#" class="card-thumb">
-                  <img
-                    decoding="async"
-                    src="Necklase.jpg"
-                    alt="img-1"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="banner-info text-center">
-                  <h2>Necklace</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
-                    sed do eiusmod
-                  </p>
-                  <a href="#" class="main-btn">Shop now</a>
-                </div>
-              </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="card">
+              <img decoding="async" src="Foodie-Menu-Fifth.jpg" alt="menu" />
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Banner section exit -->
 
-    <!-- section-3 products-->
-    <section id="products" class="products">
-      <div class="wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 text-content text-center">
-              <h2>BEST SELLERS</h2>
-              <p>
-                At risus viverra adipiscing at. Iaculis urna id volutpat lacus
-                laoreet non curabitur. Enim lobortis scelerisque women dui
-                faucibus in. Nisl suscipit adipiscing.
-              </p>
+    <!-- About section -->
+    <!-- <section id="about" class="about_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-5 mb-4 mb-lg-0 order-lg-1 order-2">
+            <div class="card rounded-0">
+              <div class="card-body pt-5">
+                <h3>About US</h3>
+                <p>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </p>
+
+                <a href="#" class="main-btn mt-4">Learn More</a>
+              </div>
             </div>
-            <div class="col-12">
-              <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link active"
-                    id="jwellery-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#jwellery"
-                    type="button"
-                    role="tab"
-                    aria-controls="jwellery"
-                    aria-selected="true"
-                  >
-                    Necklace
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="ring-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#ring"
-                    type="button"
-                    role="tab"
-                    aria-controls="ring"
-                    aria-selected="false"
-                  >
-                    Rings
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="earings-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#earings"
-                    type="button"
-                    role="tab"
-                    aria-controls="earings"
-                    aria-selected="false"
-                  >
-                    Earrings
-                  </button>
-                </li>
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div
-                  class="tab-pane fade show active"
-                  id="jwellery"
-                  role="tabpanel"
-                  aria-labelledby="jwellery-tab"
-                >
-                  <div class="row">
-                    <div class="col-md-3 col-sm-6 mb-3">
-                      <div class="item-product">
-                        <a href="#" class="product-thumb-link">
-                          <img
-                            decoding="async"
-                            src="Best-Sellers-1.jpg"
-                            style="height: 230px; width: 180px"
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="product-info">
-                        <div class="d-flex justify-content-between py-3">
-                          <a href="#" class="cat-parent">Women</a>
-                          <a href="#" class="wishlist">
-                            <i class="fa fa-heart"></i>
-                          </a>
-                        </div>
-                        <h4 class="product-title">
-                          <a href="#"
-                            >Titanium ring in ged palladiumfinish metal</a
-                          >
-                        </h4>
-                        <div class="product-price">
-                          <ins
-                            ><span class="money text-white">$300.00</span></ins
-                          >
-                        </div>
-                        <div
-                          class="d-flex align-items-center justify-content-between py-1"
-                        >
-                          <div class="rating">
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                          </div>
-                          <div class="basket">
-                            <a href="#"
-                              ><i class="fas fa-shopping-basket"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
+          </div>
+          <div class="col-xl-8 col-lg-7 mb-4 mb-lg-0 order-lg-2 order-1">
+            <img
+              decoding="async"
+              src="Images/Hotel-Banner.jpg"
+              class="img-fluid"
+              alt="About Us"
+            />
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- About section exit -->
+
+    <!-- menu section -->
+    <section id="menu" class="menu_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text-center">
+                <h3><span class="fst-italic">01</span> Fresh Food</h3>
+                <p class="fst-italic">
+                  Sample text. Click to select the text box. Click again or
+                  double click to start editing the text.
+                </p>
+                <a href="#" class="main-btn mt-4">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text-center">
+                <h3><span class="fst-italic">02</span> Dinner Meals</h3>
+                <p class="fst-italic">
+                  Sample text. Click to select the text box. Click again or
+                  double click to start editing the text.
+                </p>
+                <a href="#" class="main-btn mt-4">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text-center">
+                <h3><span class="fst-italic">03</span> Classic Menu</h3>
+                <p class="fst-italic">
+                  Sample text. Click to select the text box. Click again or
+                  double click to start editing the text.
+                </p>
+                <a href="#" class="main-btn mt-4">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text-center">
+                <h3><span class="fst-italic">04</span> Chef's Special</h3>
+                <p class="fst-italic">
+                  Sample text. Click to select the text box. Click again or
+                  double click to start editing the text.
+                </p>
+                <a href="#" class="main-btn mt-4">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text-center">
+                <h3><span class="fst-italic">05</span> Pasta & Pizza</h3>
+                <p class="fst-italic">
+                  Sample text. Click to select the text box. Click again or
+                  double click to start editing the text.
+                </p>
+                <a href="#" class="main-btn mt-4">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text-center">
+                <h3><span class="fst-italic">06</span> Vegan Dishes</h3>
+                <p class="fst-italic">
+                  Sample text. Click to select the text box. Click again or
+                  double click to start editing the text.
+                </p>
+                <a href="#" class="main-btn mt-4">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- menu section exit -->
+
+    <!-- Offer Section -->
+    <section id="offers" class="offers_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center mb-4">
+            <h2>Best Offers</h2>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,<br
+                class="d-none d-md-block"
+              />
+              but the majority have suffered alteration.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div
+              class="card rounded-0"
+              style="background-image: url('Burger.webp')"
+            >
+              <div class="offer-text bg-black bg-opacity-50">
+                <h3 class="text-white">Double Burger</h3>
+                <h5>$8.50 <del class="fst-italic opacity-75">$10.50</del></h5>
+                <a href="#" class="main-btn mt-3">Add TO Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div
+              class="card rounded-0"
+              style="background-image: url('Starteter-2.jpeg')"
+            >
+              <div class="offer-text bg-black bg-opacity-50">
+                <h3 class="text-white">Farm House</h3>
+                <h5>$8.50 <del class="fst-italic opacity-75">$10.50</del></h5>
+                <a href="#" class="main-btn mt-3">Add TO Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div
+              class="card rounded-0"
+              style="background-image: url('Starter.jpg')"
+            >
+              <div class="offer-text bg-black bg-opacity-50">
+                <h3 class="text-white">Bacon Burger</h3>
+                <h5>$8.50 <del class="fst-italic opacity-75">$10.50</del></h5>
+                <a href="#" class="main-btn mt-3">Add TO Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div
+              class="card rounded-0"
+              style="background-image: url('Veg_Thali.jpg')"
+            >
+              <div class="offer-text bg-black bg-opacity-50">
+                <h3 class="text-white">Special Offer</h3>
+                <h5>$8.50 <del class="fst-italic opacity-75">$10.50</del></h5>
+                <a href="#" class="main-btn mt-3">Add TO Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div
+              class="card rounded-0"
+              style="background-image: url('chiken-image.jpg')"
+            >
+              <div class="offer-text bg-black bg-opacity-50">
+                <h3 class="text-white">Black Burger</h3>
+                <h5>$8.50 <del class="fst-italic opacity-75">$10.50</del></h5>
+                <a href="#" class="main-btn mt-3">Add TO Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div
+              class="card rounded-0"
+              style="background-image: url('Foodie-Menu-Four.jpg')"
+            >
+              <div class="offer-text bg-black bg-opacity-50">
+                <h3 class="text-white">King Burger</h3>
+                <h5>$8.50 <del class="fst-italic opacity-75">$10.50</del></h5>
+                <a href="#" class="main-btn mt-3">Add TO Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- offer Section exit -->
+
+    <!-- review Section -->
+    <section id="review" class="review_wrapper">
+      <h1 class="headingOne" style="text-align: center">Review Section</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-7 col-sm-7">
+            <div class="card rounded-0 bg-white p-2">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="carousel-caption">
+                      <img decoding="async" src="PIZZA.jpeg" />
+                      <h3>Pizza & Roll</h3>
+                      <p>
+                        Pizza is a dish of Italian origin consisting of a
+                        usually round, flat base of leavened wheat-based dough
+                        topped with tomatoes, cheese, and often various ...
+                      </p>
+                      <a href="#" class="main-btn mt-4">View Menu</a>
                     </div>
-                    <div class="col-md-3 col-sm-6 mb-3">
-                      <div class="item-product">
-                        <a href="#" class="product-thumb-link">
-                          <img
-                            decoding="async"
-                            src="Best-Sellers-2.jpg"
-                            style="height: 230px; width: 180px"
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="product-info">
-                        <div class="d-flex justify-content-between py-3">
-                          <a href="#" class="cat-parent">Women</a>
-                          <a href="#" class="wishlist">
-                            <i class="fa fa-heart"></i>
-                          </a>
-                        </div>
-                        <h4 class="product-title">
-                          <a href="#"
-                            >Titanium ring in ged palladiumfinish metal</a
-                          >
-                        </h4>
-                        <div class="product-price">
-                          <ins
-                            ><span class="money text-white">$300.00</span></ins
-                          >
-                        </div>
-                        <div
-                          class="d-flex align-items-center justify-content-between py-1"
-                        >
-                          <div class="rating">
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                          </div>
-                          <div class="basket">
-                            <a href="#"
-                              ><i class="fas fa-shopping-basket"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 mb-3">
-                      <div class="item-product">
-                        <a href="#" class="product-thumb-link">
-                          <img
-                            decoding="async"
-                            src="Best-Sellers-3.jpg"
-                            style="height: 230px; width: 180px"
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="product-info">
-                        <div class="d-flex justify-content-between py-3">
-                          <a href="#" class="cat-parent">Women</a>
-                          <a href="#" class="wishlist">
-                            <i class="fa fa-heart"></i>
-                          </a>
-                        </div>
-                        <h4 class="product-title">
-                          <a href="#"
-                            >Titanium ring in ged palladiumfinish metal</a
-                          >
-                        </h4>
-                        <div class="product-price">
-                          <ins
-                            ><span class="money text-white">$300.00</span></ins
-                          >
-                        </div>
-                        <div
-                          class="d-flex align-items-center justify-content-between py-1"
-                        >
-                          <div class="rating">
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                          </div>
-                          <div class="basket">
-                            <a href="#"
-                              ><i class="fas fa-shopping-basket"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 mb-3">
-                      <div class="item-product">
-                        <a href="#" class="product-thumb-link">
-                          <img
-                            decoding="async"
-                            src="Best-Sellers-4.jpg"
-                            style="height: 230px; width: 180px"
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="product-info">
-                        <div class="d-flex justify-content-between py-3">
-                          <a href="#" class="cat-parent">Women</a>
-                          <a href="#" class="wishlist">
-                            <i class="fa fa-heart"></i>
-                          </a>
-                        </div>
-                        <h4 class="product-title">
-                          <a href="#"
-                            >Titanium ring in ged palladiumfinish metal</a
-                          >
-                        </h4>
-                        <div class="product-price">
-                          <ins
-                            ><span class="money text-white">$300.00</span></ins
-                          >
-                        </div>
-                        <div
-                          class="d-flex align-items-center justify-content-between py-1"
-                        >
-                          <div class="rating">
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                          </div>
-                          <div class="basket">
-                            <a href="#"
-                              ><i class="fas fa-shopping-basket"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption">
+                      <img decoding="async" src="Rajastanii - Daal.jpg" />
+                      <h3>RajaStanii - Dal - Batiii</h3>
+                      <p>
+                        Dal Bati Churma is the most popular dish in Rajasthani
+                        cuisine. It is made of three components of bati, dal,
+                        and churma. Dal is lentils, bati is a baked wheat ball,
+                        and churma is powdered sweetened cereal. Churma is a
+                        popular delicacy usually served with baatis and dal.
+                      </p>
+                      <a href="#" class="main-btn mt-4">View Menu</a>
                     </div>
                   </div>
                 </div>
-
-                <div
-                  class="tab-pane fade"
-                  id="ring"
-                  role="tabpanel"
-                  aria-labelledby="ring-tab"
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
                 >
-                  <div class="row">
-                    <div class="col-md-3 col-sm-6 mb-3">
-                      <div class="item-product">
-                        <a href="#" class="product-thumb-link">
-                          <img
-                            decoding="async"
-                            src="Rings Banner One.jpg"
-                            style="height: 230px; width: 180px"
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="product-info">
-                        <div class="d-flex justify-content-between py-3">
-                          <a href="#" class="cat-parent">Women</a>
-                          <a href="#" class="wishlist">
-                            <i class="fa fa-heart"></i>
-                          </a>
-                        </div>
-                        <h4 class="product-title">
-                          <a href="#"
-                            >Titanium ring in ged palladiumfinish metal</a
-                          >
-                        </h4>
-                        <div class="product-price">
-                          <ins
-                            ><span class="money text-white">$300.00</span></ins
-                          >
-                        </div>
-                        <div
-                          class="d-flex align-items-center justify-content-between py-1"
-                        >
-                          <div class="rating">
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                          </div>
-                          <div class="basket">
-                            <a href="#"
-                              ><i class="fas fa-shopping-basket"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 mb-3">
-                      <div class="item-product">
-                        <a href="#" class="product-thumb-link">
-                          <img
-                            decoding="async"
-                            src="Rings Banner Two.jpg"
-                            style="height: 230px; width: 180px"
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="product-info">
-                        <div class="d-flex justify-content-between py-3">
-                          <a href="#" class="cat-parent">Women</a>
-                          <a href="#" class="wishlist">
-                            <i class="fa fa-heart"></i>
-                          </a>
-                        </div>
-                        <h4 class="product-title">
-                          <a href="#"
-                            >Titanium ring in ged palladiumfinish metal</a
-                          >
-                        </h4>
-                        <div class="product-price">
-                          <ins
-                            ><span class="money text-white">$300.00</span></ins
-                          >
-                        </div>
-                        <div
-                          class="d-flex align-items-center justify-content-between py-1"
-                        >
-                          <div class="rating">
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                          </div>
-                          <div class="basket">
-                            <a href="#"
-                              ><i class="fas fa-shopping-basket"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 mb-3">
-                      <div class="item-product">
-                        <a href="#" class="product-thumb-link">
-                          <img
-                            decoding="async"
-                            src="Rings Banner Three.jpg"
-                            style="height: 230px; width: 180px"
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="product-info">
-                        <div class="d-flex justify-content-between py-3">
-                          <a href="#" class="cat-parent">Women</a>
-                          <a href="#" class="wishlist">
-                            <i class="fa fa-heart"></i>
-                          </a>
-                        </div>
-                        <h4 class="product-title">
-                          <a href="#"
-                            >Titanium ring in ged palladiumfinish metal</a
-                          >
-                        </h4>
-                        <div class="product-price">
-                          <ins
-                            ><span class="money text-white">$300.00</span></ins
-                          >
-                        </div>
-                        <div
-                          class="d-flex align-items-center justify-content-between py-1"
-                        >
-                          <div class="rating">
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                          </div>
-                          <div class="basket">
-                            <a href="#"
-                              ><i class="fas fa-shopping-basket"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 mb-3">
-                      <div class="item-product">
-                        <a href="#" class="product-thumb-link">
-                          <img
-                            decoding="async"
-                            src="Rings Banner Six.jpg"
-                            style="height: 230px; width: 180px"
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="product-info">
-                        <div class="d-flex justify-content-between py-3">
-                          <a href="#" class="cat-parent">Women</a>
-                          <a href="#" class="wishlist">
-                            <i class="fa fa-heart"></i>
-                          </a>
-                        </div>
-                        <h4 class="product-title">
-                          <a href="#"
-                            >Titanium ring in ged palladiumfinish metal</a
-                          >
-                        </h4>
-                        <div class="product-price">
-                          <ins
-                            ><span class="money text-white">$300.00</span></ins
-                          >
-                        </div>
-                        <div
-                          class="d-flex align-items-center justify-content-between py-1"
-                        >
-                          <div class="rating">
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                          </div>
-                          <div class="basket">
-                            <a href="#"
-                              ><i class="fas fa-shopping-basket"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="tab-pane fade"
-                  id="earings"
-                  role="tabpanel"
-                  aria-labelledby="earings-tab"
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
                 >
-                  <div class="row">
-                    <div class="col-md-3 col-sm-6 mb-3">
-                      <div class="item-product">
-                        <a href="#" class="product-thumb-link">
-                          <img
-                            decoding="async"
-                            src="Ear-Rings - One.jpg"
-                            style="height: 230px; width: 180px"
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="product-info">
-                        <div class="d-flex justify-content-between py-3">
-                          <a href="#" class="cat-parent">Women</a>
-                          <a href="#" class="wishlist">
-                            <i class="fa fa-heart"></i>
-                          </a>
-                        </div>
-                        <h4 class="product-title">
-                          <a href="#"
-                            >Titanium ring in ged palladiumfinish metal</a
-                          >
-                        </h4>
-                        <div class="product-price">
-                          <ins
-                            ><span class="money text-white">$300.00</span></ins
-                          >
-                        </div>
-                        <div
-                          class="d-flex align-items-center justify-content-between py-1"
-                        >
-                          <div class="rating">
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                          </div>
-                          <div class="basket">
-                            <a href="#"
-                              ><i class="fas fa-shopping-basket"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 mb-3">
-                      <div class="item-product">
-                        <a href="#" class="product-thumb-link">
-                          <img
-                            decoding="async"
-                            src="Ear - Rings - Two.jpg"
-                            style="height: 230px; width: 180px"
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="product-info">
-                        <div class="d-flex justify-content-between py-3">
-                          <a href="#" class="cat-parent">Women</a>
-                          <a href="#" class="wishlist">
-                            <i class="fa fa-heart"></i>
-                          </a>
-                        </div>
-                        <h4 class="product-title">
-                          <a href="#"
-                            >Titanium ring in ged palladiumfinish metal</a
-                          >
-                        </h4>
-                        <div class="product-price">
-                          <ins
-                            ><span class="money text-white">$300.00</span></ins
-                          >
-                        </div>
-                        <div
-                          class="d-flex align-items-center justify-content-between py-1"
-                        >
-                          <div class="rating">
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                          </div>
-                          <div class="basket">
-                            <a href="#"
-                              ><i class="fas fa-shopping-basket"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 mb-3">
-                      <div class="item-product">
-                        <a href="#" class="product-thumb-link">
-                          <img
-                            decoding="async"
-                            src="Ear - Rings - Three.jpg"
-                            style="height: 230px; width: 180px"
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="product-info">
-                        <div class="d-flex justify-content-between py-3">
-                          <a href="#" class="cat-parent">Women</a>
-                          <a href="#" class="wishlist">
-                            <i class="fa fa-heart"></i>
-                          </a>
-                        </div>
-                        <h4 class="product-title">
-                          <a href="#"
-                            >Titanium ring in ged palladiumfinish metal</a
-                          >
-                        </h4>
-                        <div class="product-price">
-                          <ins
-                            ><span class="money text-white">$300.00</span></ins
-                          >
-                        </div>
-                        <div
-                          class="d-flex align-items-center justify-content-between py-1"
-                        >
-                          <div class="rating">
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                          </div>
-                          <div class="basket">
-                            <a href="#"
-                              ><i class="fas fa-shopping-basket"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 mb-3">
-                      <div class="item-product">
-                        <a href="#" class="product-thumb-link">
-                          <img
-                            decoding="async"
-                            src="Ear - Rings - Four.jpg"
-                            style="height: 230px; width: 180px"
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="product-info">
-                        <div class="d-flex justify-content-between py-3">
-                          <a href="#" class="cat-parent">Women</a>
-                          <a href="#" class="wishlist">
-                            <i class="fa fa-heart"></i>
-                          </a>
-                        </div>
-                        <h4 class="product-title">
-                          <a href="#"
-                            >Titanium ring in ged palladiumfinish metal</a
-                          >
-                        </h4>
-                        <div class="product-price">
-                          <ins
-                            ><span class="money text-white">$300.00</span></ins
-                          >
-                        </div>
-                        <div
-                          class="d-flex align-items-center justify-content-between py-1"
-                        >
-                          <div class="rating">
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                          </div>
-                          <div class="basket">
-                            <a href="#"
-                              ><i class="fas fa-shopping-basket"></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-6 mt-5">
+            <div class="information">
+              <pre>
+                "The most common type of accommodation in the hotel industry, a
+                hotel is defined as an establishment that offers overnight
+                accommodation, meals and other services. They are mainly aimed
+                at travelers or tourists, although locals may also use them.
+                Hotels provide private rooms and almost always have en-suite
+                bathrooms...,"
+              </pre>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- offer Section exit -->
 
-    <!-- section-4 choose-->
-    <section id="deal">
-      <div class="wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="text-center border border-white deal-of-the-day py-5">
-                <div class="text-content py-5">
-                  <h2>DEALS OF THE DAY</h2>
-                  <h4>UPTO 60% OFF</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Etiam et purus a odio finibus bibendum in sit amet leo.
-                    Mauris feugiat erat tellus
-                  </p>
-                </div>
-              </div>
+    <!-- Footer section -->
+    <section id="contact" class="footer_wrapper mt-3 mt-md-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-md-6 text-center text-md-start">
+            <div class="footer-logo mb-3 mb-md-0">
+              <img decoding="async" src="Foodies.webp" />
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- section-5 style-->
-    <section id="blog">
-      <div class="blog-section wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 mb-2 text-content text-center">
-              <h2>LATEST NEWS FROM THE BLOG</h2>
-              <p>
-                This unique jewelry is handcrafted on the beautiful island of
-                Nantucket using fine silver and semi precious stones. View
-                glasse fashion collection 2018 by Fanbong
-              </p>
-            </div>
-          </div>
-          <div class="row align-items-center">
-            <div class="col-md-4 col-sm-6 mb-4 mb-lg-0">
-              <div>
-                <a href="#" class="card-thumb">
-                  <img
-                    decoding="async"
-                    src="Final_Image_One.webp"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="text-center px-2 mt-2">
-                  <h2>Girls Wear Tops</h2>
-                  <p>
-                    Our urban and streetwear fashion place is no Old Navy,
-                    Banana Republic or a Walmart clothing store, God forbid.
-                    We've quickly become...
-                  </p>
-                  <a href="#" class="main-btn">Read More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-4 mb-lg-0">
-              <div>
-                <a href="#" class="card-thumb">
-                  <img
-                    decoding="async"
-                    src="Final_Image_Two.webp"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="text-center px-2 mt-2">
-                  <h2>Girl A Necklace</h2>
-                  <p>
-                    Our urban and streetwear fashion place is no Old Navy,
-                    Banana Republic or a Walmart clothing store, God forbid.
-                    We've quickly become...
-                  </p>
-                  <a href="#" class="main-btn">Read More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-4 mb-lg-0">
-              <div>
-                <a href="#" class="card-thumb">
-                  <img
-                    decoding="async"
-                    src="Final_Image_Three.webp"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="text-center px-2 mt-2">
-                  <h2>Girls Wear Rings</h2>
-                  <p>
-                    Our urban and streetwear fashion place is no Old Navy,
-                    Banana Republic or a Walmart clothing store, God forbid.
-                    We've quickly become...
-                  </p>
-                  <a href="#" class="main-btn">Read More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- section-7 footer-->
-    <footer>
-      <div class="footer py-4">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6 text-md-start text-center text-lg-start">
-              <div class="footer-logo text-muted mb-3 mb-md-0">
-                © 2023-24. Front-End-Developer. All rights reserved.
-              </div>
-            </div>
-            <div class="col-md-6 text-center text-lg-end">
-              <div class="footer-social pt-1">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <div class="col-lg-4 col-md-6">
+            <ul
+              class="list-unstyled d-flex justify-content-center justify-content-md-end justify-content-lg-center jus social-icon mb-3 mb-md-0"
+            >
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i> </a>
+              </li>
+              <li>
                 <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-dribbble"></i></a>
-              </div>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i> </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="copyright-text text-lg-start text-center mb-3 mb-lg-0">
+              <p class="mb-0">
+                Copyright © 2022 <a href="#">Front-End-Developer</a>. All Rights
+                Reserved.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <!-- JS Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
-    <!-- own js -->
-    <script src="main.js"></script>
+    <!-- Footer section exit -->
+
+    <!-- Bootstrap 5 JS CDN Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+    <!-- Custom Js Link -->
+    <script src="Script.js"></script>
   </body>
 </html>
